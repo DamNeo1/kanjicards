@@ -1,0 +1,200 @@
+body {
+
+	font-size: 40px;
+	font-family: Arial;
+	background: #aa90b5;
+	margin: 0;
+	padding: =;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+#top-bar {
+
+	border-bottom: 1px solid #000;
+	background: #fff;
+	padding-left: 24px;
+	height: 30px;
+}
+
+#top-bar a {
+
+	font-size: 0.4em;
+    color: #000;
+    padding: 0;
+    margin: 6px 7px;
+    display: block;
+    float: left;
+    font-weight: bold;
+}
+
+#main-container {
+
+	margin: auto;
+	width:96%;
+	height: 95%
+}
+
+.jlpt-level-title {
+
+	font-size: 0.8em;
+    margin: 15px 0;
+    color: #fff;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #000;
+}
+
+#kanjis-list {
+	
+	margin: auto;
+	overflow-y:auto;
+}
+
+.kanji-mini {
+
+	border: 2px solid #000;
+    margin: 5px 5px 0 0;
+    font-size: 30px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #fff;
+}
+
+.kanji-mini:hover {
+
+	background: #9c5ab7;
+	cursor: pointer;
+	color:#fff;
+}
+
+#kanji-card {
+
+	width: 32%;
+    height: 84%;
+    border: 2px solid #000;
+    margin: auto;
+    margin-top: 40px;
+    background: #fff;
+    display: none;
+    position: relative;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
+}
+
+#close-card {
+
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 8%;
+    cursor: pointer;
+    background: url(../img/close.svg) no-repeat 40%;
+    background-size: 70%;
+}
+
+#kanji-char-container {
+
+	border-bottom: 1px solid #000;
+    width: 100%;
+    height: 33%;
+}
+
+#kanji-char {
+
+	height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18vh;
+}
+
+
+#kun {
+	
+	border-right: 1px solid #000;
+    width: 50%;
+    height: 34%;
+    float: left;
+    border-bottom: 1px solid #000;
+}
+
+#on {
+	
+	width: 50%;
+    height: 34%;
+    margin-left: 50%;
+    border-bottom: 1px solid #000;
+}
+
+.on-sentence, .kun-sentence {
+
+	margin: 4% 0 0 28%;
+}
+
+.on-sentence li, .kun-sentence li {
+
+	font-size: 3.5vh;
+}
+
+#definition {
+	
+    width: 100%;
+    height: 33%;
+}
+
+#kanji-card .title-kun-on {
+	
+	font-size: 1.2vw;
+	height:12%;
+	display: flex;
+    align-items: center;
+    width: 58%;
+    margin: auto;
+    padding-top: 3%;
+}
+
+.img-flag {
+
+	width: 16%;
+    border: 1px solid #9a9292;
+    margin-right: 3%;
+}
+
+#definition p {
+
+	width: 90%;
+    margin: 4% auto;
+    font-size: 1.8vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

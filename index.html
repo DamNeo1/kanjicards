@@ -1,1 +1,46 @@
-<h1>Hello test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kanjis Flash Cards</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div id="top-bar">
+		<a class="jlpt-choose-level" href="#jlpt1" data-level="1">JLPT 1</a>
+		<a class="jlpt-choose-level" href="#jlpt2" data-level="2">JLPT 2</a>
+		<a class="jlpt-choose-level" href="#jlpt3" data-level="3">JLPT 3</a>
+		<a class="jlpt-choose-level" href="#jlpt4" data-level="4">JLPT 4</a>
+		<a class="jlpt-choose-level" href="#jlpt5" data-level="5">JLPT 5</a>
+	</div>
+
+	<div id="main-container">
+		<div class="jlpt-level-title">Choisir un groupe de Kanjis ...</div>
+		<div id="kanjis-list"></div>
+		<div id="kanji-card">
+			<div id="close-card"></div>
+			<div id="kanji-char-container">
+				<div id="kanji-char"></div>
+			</div>
+			<div id="kun">
+				<div class="title-kun-on">
+					<img class="img-flag" src="img/japanese_flag.svg" alt="">
+					<span class="title">Lecture KUN</span>
+				</div>
+				<ul class="kun-sentence"></ul>
+			</div>
+			<div id="on">
+				<div class="title-kun-on">
+					<img class="img-flag" src="img/chinese_flag.svg" alt="">
+					<span class="title">Lecture ON</span>
+				</div>
+				<ul class="on-sentence"></ul>
+			</div>
+			<div id="definition"></div>
+			
+		</div>
+	</div>
+</body>
+</html>
