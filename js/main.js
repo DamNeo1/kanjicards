@@ -109,4 +109,6 @@ function loadKanjis(level) {
 
 		CURRENT_KANJI_LIST = kanjis;
 	});
+
+	$("#kanjis-list").show();
 }
