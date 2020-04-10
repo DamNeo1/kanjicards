@@ -9,21 +9,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div id="top-bar">
-		<a class="jlpt-choose-level" href="#jlpt1" data-level="1">JLPT 1</a>
-		<a class="jlpt-choose-level" href="#jlpt2" data-level="2">JLPT 2</a>
-		<a class="jlpt-choose-level" href="#jlpt3" data-level="3">JLPT 3</a>
-		<a class="jlpt-choose-level" href="#jlpt4" data-level="4">JLPT 4</a>
-		<a class="jlpt-choose-level" href="#jlpt5" data-level="5">JLPT 5</a>
+	<div id="main-menu">
+		<div id="main-title">
+			Kanjis Flash Cards
+		</div>
+
+		<div class="jlpt-choose-level" data-level="5">
+			<img src="img/jlpt5.png" alt="">
+			<span>JLPT 5</span>
+		</div>
+
+		<div class="jlpt-choose-level not-available" data-level="4">
+			<img src="img/jlpt4.png" alt="">
+			<span>JLPT 4</span>
+		</div>
+
+		<div class="jlpt-choose-level not-available" data-level="3">
+			<img src="img/jlpt3.png" alt="">
+			<span>JLPT 3</span>
+		</div>
+
+		<div class="jlpt-choose-level not-available" data-level="2">
+			<img src="img/jlpt2.png" alt="">
+			<span>JLPT 2</span>
+		</div>
+
+		<div class="jlpt-choose-level not-available" data-level="1">
+			<img src="img/jlpt1.png" alt="">
+			<span>JLPT 1</span>
+		</div>
 	</div>
 
 	<div id="main-container">
-		<div class="welcome-text">Choisir un groupe de Kanjis ...</div>
+		<div id="back"></div>
 		<div class="jlpt-level-title"></div>
 		<div id="kanjis-list"></div>
 		<div id="kanji-card">
 			<div id="close-card"></div>
-			<div id="kanji-char-container">
+			<div id="kanji-char-container">	
 				<div id="kanji-char"></div>
 			</div>
 			<div id="un-on-container">

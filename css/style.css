@@ -12,23 +12,45 @@ p {
 	padding: 0;
 }
 
-#top-bar {
+#main-title {
 
-	border-bottom: 1px solid #000;
-	background: #fff;
-	padding-left: 24px;
-	height: 30px;
+	text-align: center;
+    font-size: 7vw;
+    margin-top: 3%;
 }
 
-#top-bar a {
+.jlpt-choose-level {
 
-	font-size: 0.4em;
-    color: #000;
-    padding: 0;
-    margin: 6px 7px;
-    display: block;
+	text-align: center;
+    width: 40%;
+    border: 1px solid #000;
+    background: #fff;
     float: left;
-    font-weight: bold;
+    margin: 6% 0 0 6%;
+    cursor: pointer;
+}
+
+.jlpt-choose-level.not-available {
+
+	filter: grayscale(100%);
+	cursor: auto;
+}
+
+
+.jlpt-choose-level img {
+
+    width: 80%;
+}
+
+.jlpt-choose-level span {
+
+    display: block;
+    font-size: 6vw;
+}
+
+.jlpt-choose-level.not-available span {
+
+	color: #cfcfcf;
 }
 
 #main-container {
@@ -98,6 +120,19 @@ p {
     cursor: pointer;
     background: url(../img/close.svg) no-repeat 40%;
     background-size: 70%;
+}
+
+#back {
+
+	position: absolute;
+    top: 1%;
+    left: 0;
+    width: 10%;
+    height: 8%;
+    cursor: pointer;
+    background: url(../img/back.svg) no-repeat 40%;
+    background-size: 70%;
+    display: none;
 }
 
 #kanji-char-container {
@@ -174,7 +209,7 @@ p {
 
 @media only screen and (max-width: 800px) {
 	
-	.welcome-text, .jlpt-level-title {
+	.jlpt-level-title {
 
 		font-size: 1em;
 		text-align: center;
@@ -186,18 +221,6 @@ p {
 		margin-top: 4%;
 		display: none;
 		font-size: 0.8em;
-	}
-
-	#top-bar {
-
-		padding-left: 15px;
-		height: 6%;
-	}
-
-	#top-bar a {
-
-		font-size: 0.46em;
-	    margin: 3% 2%;
 	}
 
 	.kanji-mini {
@@ -213,7 +236,7 @@ p {
 		margin-top: 8%;
   	}
 
-  	#close-card {
+  	#close-card,#back {
 
   		width: 14%;
   	}

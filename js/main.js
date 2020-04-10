@@ -19,6 +19,7 @@ $(document).ready(function(){
 	    $("p").remove();
 	    $("#kanji-card").show();
 	    $(".jlpt-level-title").hide();
+	    $("#back").hide();
 
 	    window.scrollTo(0,0);
 
@@ -55,6 +56,17 @@ $(document).ready(function(){
 		closingCard();
 	});
 
+	//GOING BACK TO MAIN MENU
+	$("#back").click(function(){
+
+		$("#back").hide();
+		$(".jlpt-level-title").hide();
+		$("#kanjis-list").hide();
+		$("#main-menu").show();
+		$("body").css("background","#aa90b5");
+
+	});
+
 	$(document).keyup(function(e) {
 	  
 	  if (e.keyCode === 27) {
@@ -70,14 +82,17 @@ function closingCard() {
 	$("#kanji-card").hide();
 	$(".jlpt-level-title").show();
 	$("#kanjis-list").show();
+	$("#back").show();
 }
 
 
 function loadKanjis(level) {
 
+	$("#main-menu").hide();
 	$("#kanjis-list").empty();
-	$(".welcome-text").hide();
+	$("#back").show();
 	$(".jlpt-level-title").show();
+	$("body").css("background","url('img/jlpt"+level+".png') repeat-x #aa90b5");
 
 	$.getJSON("kanjis/jlpt"+level+".json",function(kanjis){
 	  	
