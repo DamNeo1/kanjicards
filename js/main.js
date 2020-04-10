@@ -72,6 +72,8 @@ function closingCard() {
 function loadKanjis(level) {
 
 	$("#kanjis-list").empty();
+	$(".welcome-text").hide();
+	$(".jlpt-level-title").show();
 
 	$.getJSON("kanjis/jlpt"+level+".json",function(kanjis){
 	  	
