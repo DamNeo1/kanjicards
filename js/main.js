@@ -110,7 +110,7 @@ function loadKanjis(level) {
 	$("#kanjis-list").empty();
 	$("#back").show();
 	$(".jlpt-level-title").show();
-	$("body").css("background","url('img/jlpt"+level+".png') repeat-x #aa90b5");
+	$("body").css("background-image","url('img/jlpt"+level+".png')");
 
 	$.getJSON("kanjis/jlpt"+level+".json",function(kanjis){
 	  	
