@@ -35,7 +35,7 @@ p {
 
 	margin: auto;
 	width:96%;
-	height: 95%
+	height: 100%
 }
 
 .jlpt-level-title {
@@ -45,6 +45,7 @@ p {
     color: #fff;
     font-weight: bold;
     -webkit-text-stroke: 1px #000;
+    color: #493850;
 }
 
 #kanjis-list {
@@ -119,17 +120,15 @@ p {
 	
 	border-right: 1px solid #000;
     width: 50%;
-    height: 34%;
+    height: 100%;
     float: left;
-    border-bottom: 1px solid #000;
 }
 
 #on {
 	
 	width: 50%;
-    height: 34%;
+    height: 100%;
     margin-left: 50%;
-    border-bottom: 1px solid #000;
 }
 
 .on-sentence, .kun-sentence {
@@ -180,7 +179,6 @@ p {
 		font-size: 1em;
 		text-align: center;
 		margin-top: 40%;
-		-webkit-text-stroke: 2px #000;
 	}
 
 	.jlpt-level-title {
@@ -193,13 +191,13 @@ p {
 	#top-bar {
 
 		padding-left: 15px;
-		height: 10%;
+		height: 6%;
 	}
 
 	#top-bar a {
 
 		font-size: 0.46em;
-	    margin: 25px 8px;
+	    margin: 3% 2%;
 	}
 
 	.kanji-mini {
@@ -212,7 +210,43 @@ p {
   	#kanji-card {
 	
 		width: 90%;
+		margin-top: 8%;
   	}
+
+  	#close-card {
+
+  		width: 14%;
+  	}
+
+  	#kanji-char {
+
+	    font-size: 34vw;
+	}
+
+	#un-on-container {
+		
+		clear: both;
+		overflow-y: auto;
+		height: 34%;
+		border-bottom: 1px solid #000;
+	}
+
+	#kanji-card .title-kun-on {
+	
+		font-size: 4.2vw;
+	    width: 92%;
+	    margin: 1% 0 0 16%;
+	}
+
+	.on-sentence, .kun-sentence {
+
+		margin: 8% 0 0 9%;
+	}
+
+	#definition p {
+		font-size: 3.8vh;
+	}
+
 }
 
 

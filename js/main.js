@@ -18,6 +18,9 @@ $(document).ready(function(){
 	    $("li").remove();
 	    $("p").remove();
 	    $("#kanji-card").show();
+	    $(".jlpt-level-title").hide();
+
+	    window.scrollTo(0,0);
 
 	    //Displaying data
 	    var kanji_id = $(this).attr("data-kanji-id");
@@ -65,6 +68,7 @@ $(document).ready(function(){
 function closingCard() {
 
 	$("#kanji-card").hide();
+	$(".jlpt-level-title").show();
 	$("#kanjis-list").show();
 }
 
