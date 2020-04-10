@@ -3,7 +3,7 @@ CURRENT_KANJI_LIST = [];
 $(document).ready(function(){
 
 	var height = $(window).height();
-	$("body").css("height",(height+20)+"px");
+	$("body").css("height",(height+80)+"px");
 
 	//LOADING KANJI AFTER LEVEL CHOOSING
 	$(".jlpt-choose-level").click(function(){
