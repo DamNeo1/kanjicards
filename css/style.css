@@ -175,9 +175,38 @@ p {
 
 @media only screen and (max-width: 800px) {
 	
-	body {
-		
-		background:#9cb590;
+	.welcome-text, .jlpt-level-title {
+
+		font-size: 1em;
+		text-align: center;
+		margin-top: 40%;
+		-webkit-text-stroke: 2px #000;
+	}
+
+	.jlpt-level-title {
+
+		margin-top: 4%;
+		display: none;
+		font-size: 0.8em;
+	}
+
+	#top-bar {
+
+		padding-left: 15px;
+		height: 10%;
+	}
+
+	#top-bar a {
+
+		font-size: 0.46em;
+	    margin: 25px 8px;
+	}
+
+	.kanji-mini {
+
+	    margin: 5px 0 0 6px;
+	    width: 46px;
+	    height: 46px;
 	}
 
   	#kanji-card {
