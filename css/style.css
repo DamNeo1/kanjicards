@@ -241,7 +241,11 @@ p {
 	
 		font-size: 4.2vw;
 	    width: 92%;
-	    margin: 1% 0 0 16%;
+	}
+
+	.img-flag {
+
+		margin: 0 3% 0 12%
 	}
 
 	.on-sentence, .kun-sentence {
