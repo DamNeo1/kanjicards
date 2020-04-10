@@ -110,7 +110,7 @@ p {
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
 }
 
-#close-card {
+#close-card,#close-about {
 
 	position: absolute;
     top: 0;
@@ -207,6 +207,56 @@ p {
     font-size: 1.8vw;
 }
 
+#about {
+	
+	position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 98%;
+    margin-left: 1%;
+    display: none;
+}
+
+#about h2,#about p {
+
+	margin: 0;
+	padding: 3%;
+}
+
+#about h2 {
+	
+	font-size: 8vw;
+}
+
+#about p {
+	
+	font-size: 4.5vw;
+	text-align: justify;
+}
+
+#footer {
+
+	height: 6%;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #000;
+    background: #191717;
+    text-align: right;
+}
+
+#footer a {
+
+	font-size: 4vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    margin: 3% 3% 0 0;
+    display: block;
+}
+
 @media only screen and (max-width: 800px) {
 	
 	.jlpt-level-title {
@@ -236,9 +286,14 @@ p {
 		margin-top: 8%;
   	}
 
-  	#close-card,#back {
+  	#close-card,#back,#close-about {
 
   		width: 14%;
+  	}
+
+  	#close-about {
+
+  		position: fixed;
   	}
 
   	#kanji-char-container {

@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 	    $("#kanjis-list").hide();
 	    $("li").remove();
-	    $("p").remove();
+	    $("p.signif").remove();
 	    $("#kanji-card").show();
 	    $(".jlpt-level-title").hide();
 	    $("#back").hide();
@@ -50,7 +50,7 @@ $(document).ready(function(){
 	    });
 
 	    var sign = CURRENT_KANJI_LIST[kanji_id].signification;
-	    $("#definition").append("<p>"+sign+"</p>");
+	    $("#definition").append("<p class='signif'>"+sign+"</p>");
 	});
 
   	//CLOSING CARD
@@ -66,8 +66,22 @@ $(document).ready(function(){
 		$(".jlpt-level-title").hide();
 		$("#kanjis-list").hide();
 		$("#main-menu").show();
+		$("#footer").show();
 		$("body").css("background","#aa90b5");
 
+	});
+
+	//CLOSING ABOUT
+	$("#close-about").click(function(){
+
+		$("#about").hide();
+		window.scrollTo(0,0);
+	});
+
+	//DISPLAY ABOUT
+	$(".about-trigger").click(function(){
+
+		$("#about").show();
 	});
 
 	$(document).keyup(function(e) {
@@ -91,6 +105,7 @@ function closingCard() {
 
 function loadKanjis(level) {
 
+	$("#footer").hide();
 	$("#main-menu").hide();
 	$("#kanjis-list").empty();
 	$("#back").show();
