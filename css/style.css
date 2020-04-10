@@ -218,7 +218,13 @@ p {
   		width: 14%;
   	}
 
-  	#kanji-char {
+  	#kanji-char-container {
+
+	    text-align: center;
+	    padding-bottom: 3%;
+	}
+
+	#kanji-char {
 
 	    font-size: 34vw;
 	}
