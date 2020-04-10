@@ -8,7 +8,10 @@ $(document).ready(function(){
 	//LOADING KANJI AFTER LEVEL CHOOSING
 	$(".jlpt-choose-level").click(function(){
 
-  		loadKanjis($(this).attr("data-level"));
+		if (! $(this).hasClass("not-available")) {
+
+			loadKanjis($(this).attr("data-level"));
+		}
   	});
 
 	//LOADING KANJI'S CARD
