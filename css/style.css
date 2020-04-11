@@ -72,7 +72,7 @@ p {
 }
 
 #kanjis-list {
-    margin: 3% auto 0;
+    margin: 3% 0 0 3%;
     overflow-y: auto;
 }
 
