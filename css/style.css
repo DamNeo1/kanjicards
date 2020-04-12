@@ -61,6 +61,19 @@ p {
 	height: 100%
 }
 
+#loading-container {
+
+	color: #fff;
+    text-align: center;
+    margin: 14% auto 0;
+    font-size: 4vw;
+    background: #000;
+    width: 55%;
+    border: 2px solid #fff;
+    padding: 1% 0;
+    display: none;
+}
+
 .jlpt-level-title {
 
 	font-size: 3vw;
@@ -74,6 +87,7 @@ p {
 #kanjis-list {
     margin: 3% 0 0 3%;
     overflow-y: auto;
+    display: none;
 }
 
 .kanji-mini {
@@ -85,6 +99,11 @@ p {
     height: 80px;
     text-align: center;
     background: #fff;
+}
+
+.kanji-mini.is-known {
+
+	background: #38d286;
 }
 
 .kanji-mini:hover {
@@ -109,7 +128,7 @@ p {
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
 }
 
-#close-card,#close-about {
+#close-card,#close-about,#check {
 
 	position: absolute;
     top: 0;
@@ -121,6 +140,23 @@ p {
     background-size: 70%;
 }
 
+#check {
+	
+	background:none;
+	left: 3%;
+    top: 1%;
+}
+
+#check.check-empty {
+
+	background: url(../img/check_empty.svg) no-repeat 40%;
+}
+
+#check.check-full {
+
+	background: url(../img/check_full.svg) no-repeat 40%;
+}
+
 #close-about {
 
 	position: fixed;
@@ -129,12 +165,24 @@ p {
 
 #back {
     position: absolute;
-    top: 0;
-    left: 1%;
+    top: 1%;
+    left: 4%;
     width: 6%;
     height: 11%;
     cursor: pointer;
     background: url(../img/back.svg) no-repeat 40%;
+    background-size: 70%;
+    display: none;
+}
+
+#shuffle {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    width: 7%;
+    height: 11%;
+    cursor: pointer;
+    background: url(../img/shuffle.svg) no-repeat 40%;
     background-size: 70%;
     display: none;
 }
@@ -304,6 +352,14 @@ p {
 		text-align: center;
 	}
 
+	#loading-container {
+
+		padding: 2% 0;
+	    margin: 20% auto 0;
+	    font-size: 5.5vw;
+	    width: 78%;
+	}
+
 	#kanjis-list {
 	
 		margin: auto;
@@ -328,12 +384,27 @@ p {
   		width: 14%;
   	}
 
+  	#check {
+
+  		height: 7%;
+    	width: 13%;
+    	top:1.5%;
+  	}
+
   	#back {
 
   		top: 1%;
 	    left: 0;
 	    height: 8%;
   	}
+
+  	#shuffle {
+
+	    top: 1.6%;
+	    right: 0%;
+	    width: 16%;
+	    height: 7%;
+	}
 
   	.important-about {
 
@@ -415,5 +486,4 @@ p {
 	    margin: 4% 3% 0 0;
 	    display: block;
 	}
-
 }

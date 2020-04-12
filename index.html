@@ -2,39 +2,49 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Kanjis Flash Cards</title>
+	<title>Apprendre les kanjis</title>
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3158025-8"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-3158025-8');
+	</script>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
 	<script src="js/main.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body id="my-body">
 	<div id="main-menu">
 		<div id="main-title">
-			Kanjis Flash Cards
+			Groupes de kanjis
 		</div>
 
-		<div class="jlpt-choose-level" data-level="5">
+		<div class="jlpt-choose-level" data-level="jlpt5" data-name-level="JLPT 5">
 			<img src="img/jlpt5.png" alt="">
 			<span>JLPT 5</span>
 		</div>
 
-		<div class="jlpt-choose-level not-available" data-level="4">
+		<div class="jlpt-choose-level not-available" data-level="jlpt4" data-name-level="JLPT 4">
 			<img src="img/jlpt4.png" alt="">
 			<span>JLPT 4</span>
 		</div>
 
-		<div class="jlpt-choose-level not-available" data-level="3">
+		<div class="jlpt-choose-level not-available" data-level="jlpt3" data-name-level="JLPT 3">
 			<img src="img/jlpt3.png" alt="">
 			<span>JLPT 3</span>
 		</div>
 
-		<div class="jlpt-choose-level not-available" data-level="2">
+		<div class="jlpt-choose-level not-available" data-level="jlpt2" data-name-level="JLPT 2">
 			<img src="img/jlpt2.png" alt="">
 			<span>JLPT 2</span>
 		</div>
 
-		<div class="jlpt-choose-level not-available" data-level="1">
+		<div class="jlpt-choose-level not-available" data-level="jlpt1" data-name-level="JLPT 1">
 			<img src="img/jlpt1.png" alt="">
 			<span>JLPT 1</span>
 		</div>
@@ -42,9 +52,12 @@
 
 	<div id="main-container">
 		<div id="back"></div>
+		<div id="shuffle"></div>
 		<div class="jlpt-level-title"></div>
+		<div id="loading-container">Chargement des kanjis...</div>
 		<div id="kanjis-list"></div>
 		<div id="kanji-card">
+			<div id="check"></div>
 			<div id="close-card"></div>
 			<div id="kanji-char-container">	
 				<div id="kanji-char"></div>
@@ -81,22 +94,16 @@
 
 		<hr>
 
-		<h2>Tous les niveaux JLPT ne sont pas disponibles.</h2>
-		<p>Répertorier les kanjis par niveau est ce qui me demande le plus de travail.</p>
-		<p>J'ai constaté qu'il n'est pas forcément évident de trouver des listes officielles avec un nombre officiel de Kanjis par liste également.</p>
-		<p>Et d'une liste à l'autre, parfois, il peut ne pas y avoir les même kanjis...</p>
-		<p>De plus, je réalise cette application web durant <u>mon temps libre</u>. J'ai un travail et une vie à côté :)</p>
-		
-		<hr>
-		
 		<h2>Ça s'affiche mal ton truc !</h2>
 		<p>J'ai essayé de faire en sorte de <span class="important-about">privilégier l'affichage pour mobile en mode portrait avec le navigateur CHROME</span>.</p>
 		<p>Si le tout sur un ordinateur peut passer, ce n'est peut être pas optimal.</p>
 		<p>Si cela s'affiche mal sur votre téléphone, voir la section ci-dessous avec les rapports de bugs.</p>
-
+		
 		<hr>
 
 		<h2>Vous voulez m'aider ?</h2>
+
+		<p>J'ai une page <a href="https://fr.tipeee.com/apprendre-les-kanjis" target="_blank">Tipeee</a> sur laquelle vous pouvez me faire un don. Merci d'avance :)</p>
 
 		<p>- <u>Rapport de bugs</u> : si vous constatez un bug d'affichage, d'utilisation ou une erreur sur la fiche d'un kanji, ce serait super de pouvoir me le remonter par mail : <b>[damienkanji[at]gmail.com]</b>.</p>
 		<p>Il me faut quelques infos : le descriptif du bug, quand il apparaît (quel écran, quelle manipulation a été faite...), votre modèle de téléphone (très important) et votre navigateur (Chrome, Safari..) : très important également.</p>
@@ -107,6 +114,14 @@
 		<p>Si au passage vous avez une idée de nom pour cette web app, je suis preneur. Je me rends bien compte que le nom donné n'est peut être pas super...</p>
 		<p>mon mail : <b>[damienkanji[at]gmail.com]</b></p>
 		
+		<hr>
+		
+		<h2>Tous les niveaux JLPT ne sont pas disponibles.</h2>
+		<p>Répertorier les kanjis par niveau est ce qui me demande le plus de travail.</p>
+		<p>J'ai constaté qu'il n'est pas forcément évident de trouver des listes officielles avec un nombre officiel de Kanjis par liste également.</p>
+		<p>Et d'une liste à l'autre, parfois, il peut ne pas y avoir les même kanjis...</p>
+		<p>De plus, je réalise cette application web durant <u>mon temps libre</u>. J'ai un travail et une vie à côté :)</p>
+
 		<hr>
 
 		<h2>Ressources apprentissage Japonais</h2>
